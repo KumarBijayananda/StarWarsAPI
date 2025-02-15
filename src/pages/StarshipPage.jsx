@@ -28,7 +28,13 @@ function loaded() {
 
   return (
     <div className="shipPage">
-      <h3>{shipInfo[0].name}</h3>
+      <h1>Name: {shipInfo[0].name}</h1>
+      <h2>Manufacturer: {shipInfo[0].manufacturer}</h2>
+      <h2>Length: {shipInfo[0].length}</h2>
+      <h2>Passengers: {shipInfo[0].passengers}</h2>
+    
+
+
     </div>
   );
 

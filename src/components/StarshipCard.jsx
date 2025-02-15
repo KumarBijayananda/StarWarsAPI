@@ -1,7 +1,7 @@
 export default function StarshipCard({ ship }) {
   return (
     <div className="card">
-      <h2>{ship.name}</h2>
+      <h1>{ship.name}</h1>
     </div>
   );
 }
