@@ -24,3 +24,17 @@
   background-color: rgb(54, 54, 54);
 }
 
+.navBtns{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.navBtns>button{
+  width: 100px;
+}
+.pageTitle{
+  max-width: fit-content;
+  height: 5rem;
+  margin: 2rem auto;
+}

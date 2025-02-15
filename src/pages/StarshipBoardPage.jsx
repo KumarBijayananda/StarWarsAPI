@@ -20,15 +20,21 @@ export default function StarshipBoardPage() {
   function loaded() {
 
     return (
+      <> <div className="pageTitle"><h1>Starwars Starship Library</h1></div>
+      
       <div className="board">
         {starship[0].results.map((ship, index) => (
           <Link key={index} to={`/starships/${ship.name}`}>
             <StarshipCard ship={ship} />
           </Link>
         ))}
-        <button onClick={() => setPage((page) => page - 1)}>Previous</button>
-        <button onClick={() => setPage((page) => page + 1)}>Next</button>
+        
       </div>
+      <div className="navBtns">
+      <button onClick={() => setPage((page) => (page - 1))}>Previous</button>
+      <button onClick={() => setPage((page) => (page + 1))}>Next</button>
+      </div>
+      </>
     );
   }
 
